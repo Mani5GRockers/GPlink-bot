@@ -33,8 +33,8 @@ async def link_handler(bot, message):
 
 
 async def get_shortlink(link):
-    url = 'https://gplinks.in/api'
-    params = {'api': API_KEY, 'url': link}
+    url = ' https://bitly.awslink.in/api/?key'
+    params = {'api/?key': API_KEY, 'url': link}
 
     async with aiohttp.ClientSession() as session:
         async with session.get(url, params=params, raise_for_status=True) as response:
